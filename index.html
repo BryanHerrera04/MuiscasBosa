@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación Muiscas de Bosa</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tu CSS personalizado (SIEMPRE va después de Bootstrap para poder sobrescribir) -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+    <!-- Aquí irá todo el contenido -->
+
+    <!-- Header / Título Principal -->
+<header class="bg-success text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-3 fw-bold">Territorio Muisca de Bosa</h1>
+        <p class="lead">Una investigación sobre la memoria, la resistencia y la cultura viva en el sur de Bogotá.</p>
+    </div>
+</header>
+
+<!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tu JS personalizado -->
+    <script src="js/script.js"></script>
+
+    <!-- Sección Mapa Interactivo -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Ubicación del Resguardo y Comunidad</h2>
+        <!-- Contenedor donde se dibujará el mapa -->
+        <div id="mapa-bosa" style="height: 450px; width: 100%;" class="rounded-3 shadow"></div>
+        <p class="text-muted mt-2 small text-center">Fuente: OpenStreetMap. Ubicación aproximada del territorio Muisca en Bosa.</p>
+    </div>
+</section>
+
+<!-- Sección Actividades -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Actividades de la Comunidad</h2>
+        <div class="row g-4"> <!-- g-4 para los gutters (espacios) -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/agricultura.jpg" class="card-img-top" alt="Agricultura">
+                    <div class="card-body">
+                        <h5 class="card-title">Agricultura Tradicional</h5>
+                        <p class="card-text">Cultivos de papa, maíz y cubios en las huertas, manteniendo técnicas ancestrales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/artesania.jpg" class="card-img-top" alt="Artesanías">
+                    <div class="card-body">
+                        <h5 class="card-title">Artesanías</h5>
+                        <p class="card-text">Tejidos en lana y algodón, así como la elaboración de mochilas y cerámica.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/medicina.jpg" class="card-img-top" alt="Medicina">
+                    <div class="card-body">
+                        <h5 class="card-title">Medicina Ancestral</h5>
+                        <p class="card-text">Uso de plantas medicinales como el tabaco y la hoja de coca para armonización.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Música -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Música y Sonidos del Territorio</h2>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h4>Instrumentos Ancestrales</h4>
+                <p>Fotutos, caracoles y capadores. La música Muisca está ligada a la naturaleza y los rituales. A continuación, un ejemplo de una canción tradicional interpretada por miembros de la comunidad de Bosa.</p>
+                <!-- Ejemplo de reproductor de audio simple -->
+                <div class="bg-dark text-white p-3 rounded">
+                    <p class="mb-1">Canto al Sol (Gymnasia)</p>
+                    <audio controls class="w-100">
+                        <source src="assets/audio/canto-muisca.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="assets/img/instrumentos.jpg" alt="Instrumentos musicales Muiscas" class="img-fluid rounded-3 shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer simple -->
+<footer class="bg-dark text-white text-center py-3 mt-4">
+    <p class="mb-0">Proyecto académico - Investigación sobre los Muiscas de Bosa | Fuentes: [Tus fuentes]</p>
+</footer>
+
+    <!-- Bootstrap 5 JS (opcional, pero necesario para ciertos componentes) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tu JS personalizado -->
+    <script src="js/script.js"></script>
+</body>
+</html>
