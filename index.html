@@ -3,111 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investigación Muiscas de Bosa</title>
+    <title>Ie Muysca - Plan de Vida | Resguardo Muysca de Fonquetá y Cerca de Piedra</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Tu CSS personalizado (SIEMPRE va después de Bootstrap para poder sobrescribir) -->
-    <link rel="stylesheet" href="css/estilos.css">
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
-    <!-- Aquí irá todo el contenido -->
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-spiral me-2"></i>Ie Muysca
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ley-origen">Ley de Origen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mapa">Territorio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#actividades">Actividades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#flora">Flora Sagrada</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#referencias">📚 Referencias</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Header / Título Principal -->
-<header class="bg-success text-white text-center py-5">
-    <div class="container">
-        <h1 class="display-3 fw-bold">Territorio Muisca de Bosa</h1>
-        <p class="lead">Una investigación sobre la memoria, la resistencia y la cultura viva en el sur de Bogotá.</p>
-    </div>
-</header>
+    <!-- Hero Section - Título Principal -->
+    <section id="inicio" class="hero-section pt-5 mt-5">
+        <div class="container py-5">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-lg-8 mx-auto text-center animate-fade">
+                    <h1 class="display-3 fw-bold mb-4">Ie Muysca</h1>
+                    <h2 class="display-5 mb-3">Plan de Vida</h2>
+                    <p class="lead mb-4">Resguardo Indígena Muysca de Fonquetá y Cerca de Piedra</p>
+                    <div class="spiral-divider my-4 mx-auto" style="width: 100px; height: 4px;"></div>
+                    <p class="mt-4 fs-5">"La ley de origen se guarda en el pensamiento, se defiende con la vida, se transmite de generación en generación y se honra con el corazón, con el pquyquy."</p>
+                    <a href="#ley-origen" class="btn btn-muysca mt-4"><i class="fas fa-feather-alt me-2"></i>Conoce nuestra historia</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Leaflet JS -->
+    <!-- Ley de Origen - Abuela Bagüe -->
+    <section id="ley-origen" class="ley-origen py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <span class="badge bg-warning text-dark mb-3"><i class="fas fa-star me-1"></i> Cosmovisión Muysca</span>
+                    <h2 class="display-5 fw-bold mb-4">Abuela Bagüe</h2>
+                    <p class="lead mb-3">Ilumina con un destello de creación el ie muysca</p>
+                    <div class="quote-text">
+                        <i class="fas fa-quote-left me-2"></i>
+                        La ley de origen representa el principio de todas las dimensiones, del conocimiento, de la manera en la cual se llega a ese conocimiento originario. Esta ley primigenia indica la forma y función de la estructura del universo de sentido de cada comunidad muysca.
+                    </div>
+                    <p class="mt-3">La creación misma de Chiminigagua, que contiene el todo y que es principio de todo, fue llamada Bagüe, la madre, hija y abuela. La luz que al estar encerrada en esa cosa grande llamada Chiminigagua, y que creó el todo en Bagüe, se transformó en un soplo, en un aire que fue surcado por aves negras enormes.</p>
+                    <p class="mt-2"><strong>Bachué o Furachoque</strong> trajo consigo un niño quien en las cucas de la tierra se formó y junto con Bachué crearon a los muysca, crearon a la gente buena.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="muysca-card p-4 text-center bg-white text-dark">
+                        <i class="fas fa-moon fs-1"></i>
+                        <h3 class="mt-3">Dualidad y Complementariedad</h3>
+                        <p>Chía (Luna) y Sua (Sol) - La luz y la oscuridad se complementan en el pensamiento muysca. La oscuridad resplandece bajo la luz de la luna, y la lechuza Huitaca nos recuerda el equilibrio eterno.</p>
+                        <hr>
+                        <p class="small text-muted">"En la luz se encuentra la esencia de la oscuridad"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Territorio y Mapa -->
+    <section id="mapa" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Nuestro Territorio</h2>
+                <div class="spiral-divider mx-auto" style="width: 80px; height: 3px;"></div>
+                <p class="lead mt-3">Resguardo Indígena Muysca de Fonquetá y Cerca de Piedra - Chía, Cundinamarca</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 mb-4">
+                    <div id="mapa-resguardo"></div>
+                    <p class="text-muted mt-2 small text-center"><i class="fas fa-map-marker-alt me-1"></i> Ubicación aproximada del Resguardo en Chía, entre las veredas de Fonquetá y Cerca de Piedra</p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="muysca-card p-4 h-100">
+                        <h3><i class="fas fa-mountain me-2"></i> Territorio Ancestral</h3>
+                        <p>El Resguardo cuenta con una extensión de <strong>200 hectáreas y 2741 metros cuadrados</strong>, ubicado en la montaña occidental del municipio de Chía, entre las cotas 2570 y 2900 msnm.</p>
+                        <h4 class="mt-3 fs-5">Sectores principales:</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-leaf me-2"></i> Los Lavaderos</li>
+                            <li><i class="fas fa-leaf me-2"></i> La Arenera</li>
+                            <li><i class="fas fa-leaf me-2"></i> Pueblo Nuevo</li>
+                            <li><i class="fas fa-leaf me-2"></i> La Pichonera</li>
+                        </ul>
+                        <div class="mt-3 p-3" style="background: #f0ebe3; border-radius: 15px;">
+                            <i class="fas fa-water me-2"></i> <strong>Cerros tutelares:</strong> El Picacho (Pico del Águila), Cerro de la Cruz, Cerro La Chiguata
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Actividades de la Comunidad -->
+    <section id="actividades" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Actividades de la Comunidad</h2>
+                <div class="spiral-divider mx-auto" style="width: 80px; height: 3px;"></div>
+                <p class="lead">Prácticas que mantienen viva la memoria ancestral</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="muysca-card h-100 text-center p-4">
+                        <i class="fas fa-seedling fs-1"></i>
+                        <h4 class="mt-3">Agricultura Tradicional</h4>
+                        <p>Cultivos de papa, maíz, cubios y arracacha en las huertas, manteniendo técnicas ancestrales y el respeto por la Madre Tierra.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="muysca-card h-100 text-center p-4">
+                        <i class="fas fa-hand-sparkles fs-1"></i>
+                        <h4 class="mt-3">Tejidos y Artesanías</h4>
+                        <p>Tejidos en fique, lana y algodón. El tejido es pensamiento, es hilar palabra. Tejer permite sanar y transmitir el saber de nuestras ancestras.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="muysca-card h-100 text-center p-4">
+                        <i class="fas fa-mortar-pestle fs-1"></i>
+                        <h4 class="mt-3">Medicina Ancestral</h4>
+                        <p>Uso de plantas medicinales como el tabaco, la ruda, la caléndula y la ortiga para armonización y sanación física y espiritual.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="muysca-card h-100 text-center p-4">
+                        <i class="fas fa-drumstick-bite fs-1"></i>
+                        <h4 class="mt-3">Cocina Tradicional</h4>
+                        <p>La mazamorra, chicha, masato y las preparaciones con maíz son parte fundamental de la identidad y la reunión comunitaria.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flora Sagrada -->
+    <section id="flora" class="py-5 flora-section">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Flora Sagrada</h2>
+                <div class="spiral-divider mx-auto" style="width: 80px; height: 3px;"></div>
+                <p class="lead">Especies que habitan nuestro territorio y guardianas del agua</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="species-card">
+                        <i class="fas fa-leaf"></i>
+                        <h5>Frailejón (Espeletiopsis corymbosa)</h5>
+                        <p class="small">Especie endémica de los páramos, captura el agua de la niebla y mantiene los ecosistemas. En nuestro Resguardo hay más de 300 ejemplares.</p>
+                        <span class="badge bg-success">Endémica</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="species-card">
+                        <i class="fas fa-tree"></i>
+                        <h5>Roble Andino (Quercus humboldtii)</h5>
+                        <p class="small">Árbol emblemático de los bosques andinos, hogar de epífitas y alimento para la fauna nativa.</p>
+                        <span class="badge bg-success">Nativa</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="species-card">
+                        <i class="fas fa-seedling"></i>
+                        <h5>Tijiquí (Borrachero)</h5>
+                        <p class="small">Planta sagrada muysca, considerada conductora del espíritu y la mente hacia estados de consciencia cósmica.</p>
+                        <span class="badge bg-warning text-dark">Sagrada</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="species-card">
+                        <i class="fas fa-feather-alt"></i>
+                        <h5>Vira Vira (Achyrocline saturejoides)</h5>
+                        <p class="small">Planta medicinal usada para problemas de riñón, próstata, inflamación y alergias.</p>
+                        <span class="badge bg-success">Medicinal</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="species-card">
+                        <i class="fas fa-water"></i>
+                        <h5>Totorilla (Juncus effusus)</h5>
+                        <p class="small">Especie acuática que conserva la humedad y sirve para la elaboración de artesanías tradicionales.</p>
+                        <span class="badge bg-info text-dark">Hidrofílica</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="species-card">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h5>Sangre de Drago (Croton urucurana)</h5>
+                        <p class="small">Su savia (látex) es usada para tratar diarreas crónicas, gastritis, úlceras y como cicatrizante.</p>
+                        <span class="badge bg-success">Medicinal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Música y Espiritualidad -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="display-5 fw-bold mb-4">Música y Espiritualidad</h2>
+                    <div class="spiral-divider mb-4" style="width: 60px; height: 3px;"></div>
+                    <p class="lead">"La música y el baile son expresiones que mueven el corazón de las personas de la comunidad"</p>
+                    <p>La tradición musical muysca está ligada a los ritmos de la naturaleza, al canto de las aves, al sonido del agua y al viento que sopla en las montañas sagradas. Instrumentos como el fotuto, caracoles y capadores acompañan las ceremonias y rituales de conexión con los espíritus.</p>
+                    <div class="mt-4 p-3 ceremonial-box">
+                        <i class="fas fa-drum me-2"></i> 
+                        <strong>Ceremonias espirituales:</strong> Templo de la Luna (Bohío de la mujer) y Templo Tchunzuá - espacios sagrados de sanación, encuentro y transmisión de saberes ancestrales.
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="muysca-card p-4 text-center">
+                        <i class="fas fa-music fs-1 mb-3"></i>
+                        <iframe width="560" height="315" 
+    src="https://www.youtube.com/watch?v=K-kCKLNfVqg" 
+    title="Música y cantos Muyscas" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+</iframe>
+                        <hr>
+                        <p class="small mt-3">"El Templo Tchunzuá es el lugar donde nos sentamos alrededor del fuego, en torno al ritual de la palabra, para encontrar esa conexión espiritual que hace que todos los propósitos se cumplan."</p>
+                        <p class="small fst-italic">— Manuel Socha, guía espiritual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de imágenes del territorio -->
+    <section id="galeria" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Galería del Territorio</h2>
+                <div class="spiral-divider mx-auto" style="width: 80px; height: 3px;"></div>
+                <p class="lead">Imágenes que reflejan la memoria y el paisaje del Resguardo</p>
+            </div>
+            <div class="row g-4" id="galeria-contenedor">
+                <!-- Las imágenes se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+        <!-- ============================================
+         REFERENCIAS BIBLIOGRÁFICAS
+         ============================================ -->
+    <section id="referencias" class="py-5" style="background: #f5efe7;">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">📚 Referencias Bibliográficas</h2>
+                <div class="spiral-divider mx-auto" style="width: 80px; height: 3px;"></div>
+                <p class="lead mt-3">Fuentes documentales e investigaciones que sustentan este Plan de Vida</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Documento principal -->
+                <div class="col-12">
+                    <div class="muysca-card p-4" style="background: white;">
+                        <h3 class="h4" style="color: var(--earth-green);">
+                            <i class="fas fa-book-open me-2"></i> Documento Principal
+                        </h3>
+                        <div class="ps-3 border-start border-3" style="border-color: var(--gold-sun) !important;">
+                            <p class="mb-1 fw-bold">Resguardo Indígena Muysca de Fonquetá y Cerca de Piedra. (2023).</p>
+                            <p class="mb-0"><em>Ie Muysca - Plan de Vida: "La ley de origen del pueblo myusca es una declaración colectiva"</em>.</p>
+                            <p class="text-muted small mt-2">Chía, Cundinamarca, Colombia. Documento comunitario de consulta previa y autodiagnóstico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Nota metodológica -->
+            <div class="mt-5 p-4 text-center" style="background: var(--earth-green); color: white; border-radius: 20px;">
+                <i class="fas fa-circle-info fs-3 mb-2 d-block"></i>
+                <h5 class="fw-bold">Nota sobre la construcción del Plan de Vida</h5>
+                <p class="small mb-0">Este documento fue construido colectivamente entre los años 2019 y 2023 mediante encuentros comunitarios, círculos de palabra, cartografía social, entrevistas a mayores y sabedores, y la participación de más de 350 personas del Resguardo Indígena Muysca de Fonquetá y Cerca de Piedra. El proceso contó con la orientación del Cabildo Gobernador, la Asamblea General de Indígenas y el apoyo de la Dirección de Etnias del municipio de Chía.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h4><i class="fas fa-spiral me-2"></i> Ie Muysca</h4>
+                    <p>Resguardo Indígena Muysca de Fonquetá y Cerca de Piedra<br>Chía, Cundinamarca - Colombia</p>
+                    <p class="small">"Somos resistencia, somos memoria, somos territorio"</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Lugares Sagrados</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-mountain me-2"></i> Cerro Pico del Águila</li>
+                        <li><i class="fas fa-water me-2"></i> Quebrada El Zanjón</li>
+                        <li><i class="fas fa-church me-2"></i> Templo de la Luna</li>
+                        <li><i class="fas fa-tree me-2"></i> Valle de los Frailejones</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Veredas Fonquetá y Cerca de Piedra<br>Chía, Cundinamarca</p>
+                    <p><i class="fas fa-calendar-alt me-2"></i> Festival Sue Chie - Junio de cada año</p>
+                    <div class="mt-3">
+                        <span class="badge bg-warning text-dark me-1">Plan de Vida 2023</span>
+                        <span class="badge bg-light text-dark">Reconocimiento INCODER 2013</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3">
+            <div class="text-center pt-3">
+                <p class="small mb-0">Proyecto académico de investigación - Resguardo Indígena Muysca de Fonquetá y Cerca de Piedra | Bogotá D.C., Colombia</p>
+                <p class="small mt-2">"La ley de origen sustenta la memoria ancestral de cada persona de la comunidad"</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <!-- Bootstrap 5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Tu JS personalizado -->
-    <script src="js/script.js"></script>
-
-    <!-- Sección Mapa Interactivo -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Ubicación del Resguardo y Comunidad</h2>
-        <!-- Contenedor donde se dibujará el mapa -->
-        <div id="mapa-bosa" style="height: 450px; width: 100%;" class="rounded-3 shadow"></div>
-        <p class="text-muted mt-2 small text-center">Fuente: OpenStreetMap. Ubicación aproximada del territorio Muisca en Bosa.</p>
-    </div>
-</section>
-
-<!-- Sección Actividades -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-5">Actividades de la Comunidad</h2>
-        <div class="row g-4"> <!-- g-4 para los gutters (espacios) -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="assets/img/agricultura.jpg" class="card-img-top" alt="Agricultura">
-                    <div class="card-body">
-                        <h5 class="card-title">Agricultura Tradicional</h5>
-                        <p class="card-text">Cultivos de papa, maíz y cubios en las huertas, manteniendo técnicas ancestrales.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="assets/img/artesania.jpg" class="card-img-top" alt="Artesanías">
-                    <div class="card-body">
-                        <h5 class="card-title">Artesanías</h5>
-                        <p class="card-text">Tejidos en lana y algodón, así como la elaboración de mochilas y cerámica.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="assets/img/medicina.jpg" class="card-img-top" alt="Medicina">
-                    <div class="card-body">
-                        <h5 class="card-title">Medicina Ancestral</h5>
-                        <p class="card-text">Uso de plantas medicinales como el tabaco y la hoja de coca para armonización.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Sección Música -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-5">Música y Sonidos del Territorio - ACTUALIZACIÓN</h2>
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <h4>Instrumentos Ancestrales</h4>
-                <p>Fotutos, caracoles y capadores. La música Muisca está ligada a la naturaleza y los rituales. A continuación, un ejemplo de una canción tradicional interpretada por miembros de la comunidad de Bosa.</p>
-                <!-- Ejemplo de reproductor de audio simple -->
-                <div class="bg-dark text-white p-3 rounded">
-                    <p class="mb-1">Canto al Sol (Gymnasia)</p>
-                    <audio controls class="w-100">
-                        <source src="assets/audio/canto-muisca.mp3" type="audio/mpeg">
-                        Tu navegador no soporta el elemento de audio.
-                    </audio>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <img src="assets/img/instrumentos.jpg" alt="Instrumentos musicales Muiscas" class="img-fluid rounded-3 shadow">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer simple -->
-<footer class="bg-dark text-white text-center py-3 mt-4">
-    <p class="mb-0">Proyecto académico - Investigación sobre los Muiscas de Bosa | Fuentes: [Tus fuentes]</p>
-</footer>
-
-    <!-- Bootstrap 5 JS (opcional, pero necesario para ciertos componentes) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Tu JS personalizado -->
     <script src="js/script.js"></script>
 </body>
 </html>

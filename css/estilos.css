@@ -1,0 +1,367 @@
+/* ============================================
+   VARIABLES GLOBALES
+   ============================================ */
+:root {
+    --earth-green: #2d5a2c;
+    --clay-red: #9e5a3a;
+    --gold-sun: #d9a13b;
+    --dark-earth: #3b2a1f;
+    --sky-blue: #7ab3c8;
+    --cream: #f9f3e6;
+    --spiral: #b87333;
+}
+
+/* ============================================
+   RESET Y ESTILOS BASE
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cream);
+    color: var(--dark-earth);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, .display-font {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* ============================================
+   HEADER / HERO SECTION
+   ============================================ */
+.hero-section {
+    background: linear-gradient(135deg, rgba(45, 90, 44, 0.9), rgba(59, 42, 31, 0.95)), 
+                url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "🌀";
+    font-size: 400px;
+    position: absolute;
+    right: -100px;
+    bottom: -100px;
+    opacity: 0.1;
+    font-family: monospace;
+    pointer-events: none;
+}
+
+/* ============================================
+   DIVISORES Y ELEMENTOS DECORATIVOS
+   ============================================ */
+.spiral-divider {
+    background: repeating-linear-gradient(45deg, var(--gold-sun), var(--gold-sun) 20px, var(--clay-red) 20px, var(--clay-red) 40px);
+    height: 8px;
+    width: 100%;
+}
+
+/* ============================================
+   TARJETAS MUYSCA
+   ============================================ */
+.muysca-card {
+    background: white;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.muysca-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.muysca-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--gold-sun), var(--clay-red), var(--earth-green));
+}
+
+.muysca-card i.fa-seedling,
+.muysca-card i.fa-hand-sparkles,
+.muysca-card i.fa-mortar-pestle,
+.muysca-card i.fa-drumstick-bite,
+.muysca-card i.fa-music {
+    color: var(--earth-green);
+}
+
+/* ============================================
+   SECCIÓN LEY DE ORIGEN
+   ============================================ */
+.ley-origen {
+    background: linear-gradient(135deg, var(--dark-earth), var(--earth-green));
+    color: white;
+    position: relative;
+}
+
+.quote-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    border-left: 4px solid var(--gold-sun);
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+/* ============================================
+   MAPA
+   ============================================ */
+#mapa-resguardo {
+    height: 450px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* ============================================
+   GALERÍA
+   ============================================ */
+.gallery-img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ============================================
+   TARJETAS DE ESPECIES (FLORA)
+   ============================================ */
+.species-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    height: 100%;
+}
+
+.species-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold-sun);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.species-card i {
+    font-size: 2.5rem;
+    color: var(--earth-green);
+    margin-bottom: 0.75rem;
+}
+
+.species-card h5 {
+    color: var(--clay-red);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.species-card .badge {
+    margin-top: 0.75rem;
+}
+
+/* ============================================
+   SECCIÓN FLORA (FONDO ESPECIAL)
+   ============================================ */
+.flora-section {
+    background: linear-gradient(135deg, #e8e0d5, #d9cec0);
+}
+
+/* ============================================
+   CAJA CEREMONIAL
+   ============================================ */
+.ceremonial-box {
+    background: var(--dark-earth);
+    color: white;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.ceremonial-box:hover {
+    transform: translateX(5px);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+    background: var(--dark-earth);
+    color: var(--cream);
+    padding: 3rem 0 1rem;
+}
+
+.footer hr {
+    border-color: rgba(255,255,255,0.2);
+}
+
+.footer a {
+    color: var(--gold-sun);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+/* ============================================
+   BOTONES PERSONALIZADOS
+   ============================================ */
+.btn-muysca {
+    background-color: var(--clay-red);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-muysca:hover {
+    background-color: var(--gold-sun);
+    color: var(--dark-earth);
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   NAVEGACIÓN
+   ============================================ */
+.navbar {
+    background-color: rgba(59, 42, 31, 0.95);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    color: var(--gold-sun);
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: var(--cream);
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--gold-sun);
+}
+
+.navbar-toggler {
+    background-color: var(--gold-sun);
+    border: none;
+}
+
+/* ============================================
+   ANIMACIONES
+   ============================================ */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .hero-section::before {
+        font-size: 200px;
+        right: -50px;
+        bottom: -50px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    #mapa-resguardo {
+        height: 350px;
+    }
+    
+    .muysca-card {
+        margin-bottom: 1rem;
+    }
+    
+    .species-card {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .display-5 {
+        font-size: 1.8rem;
+    }
+    
+    .quote-text {
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   EFECTO SCROLL SUAVE
+   ============================================ */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* ============================================
+   ESTILOS PARA POPUP DEL MAPA
+   ============================================ */
+.leaflet-popup-content {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-earth);
+}
+
+.leaflet-popup-content strong {
+    color: var(--earth-green);
+}
