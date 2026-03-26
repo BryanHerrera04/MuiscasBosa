@@ -57,6 +57,25 @@ function initMap() {
     
     // Polígono que representa el área aproximada del Resguardo
     // Basado en la ubicación de los cerros mencionados en el documento
+    const polygonCoords = [
+        [4.885, -74.075],  // Norte - Cerca a Tiquiza
+        [4.886, -74.073],
+        [4.887, -74.070],
+        [4.888, -74.068],  // Cerro de la Cruz
+        [4.855, -74.075],
+        [4.852, -74.072],
+        [4.848, -74.070],
+        [4.835, -74.085],
+        [4.825, -74.095],
+        [4.820, -74.100],
+        [4.830, -74.105],
+
+        [4.845, -74.102],    
+        [4.849, -74.098],
+        [4.852, -74.098],
+        [4.880, -74.087],
+        [4.885, -74.075]   // Cierre
+    ];
     
     const polygon = L.polygon(polygonCoords, {
         color: '#9e5a3a',
